@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn Data Fetch</title>
+    <style>
+      button {
+        padding: 12px 25px;
+        font-size: 16px;
+        border: none;
+        border-radius: 8px;
+        background-color: tomato;
+        color: #fff;
+        cursor: pointer;
+      }
+
+      .post_container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .post {
+        background-color: lightgoldenrodyellow;
+        padding: 15px;
+        margin: 10px;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <button onclick="loadPost()">Load Posts</button>
+    </header>
+
+    <main>
+      <div id="post-container" class="post_container"></div>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
